@@ -1,0 +1,16 @@
+1.Dont use same variable names in query
+      IN sims_login.PHP
+      In select command - where password= '$password' is not working.
+      Instead use where password='$pwd'.
+      same  with userid.
+
+
+2.Use and define $variables in same group ie inside same <?php ?>
+  eg: <?php $classid=$_GET['class_id']; ?>
+      <?php echo $classid; ?>
+
+      the above code gives notice: undefined variable.
+      Instead,
+      <?php  $classid=$_GET['class_id']; 
+             echo $classid;
+      ?>
